@@ -12,7 +12,7 @@ In a nutshell, the program should work as follows:
  3. Quit
 
 
-Command 		Description
+commands.Command 		Description
 C w h           Should create a new canvas of width w and height h.
 L x1 y1 x2 y2   Should create a new line from (x1,y1) to (x2,y2). Currently only
                 horizontal or vertical lines are supported. Horizontal and vertical lines
@@ -61,8 +61,8 @@ enter command: R 14 1 18 3
 |     x              |
 ----------------------
 
-enter command: B 10 3 o
-----------------------
+enter command: 
+----------------------B 10 3 o
 |oooooooooooooxxxxxoo|
 |xxxxxxooooooox   xoo|
 |     xoooooooxxxxxoo|
