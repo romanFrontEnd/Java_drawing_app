@@ -1,3 +1,36 @@
+# Solution 
+
+*** How to run. ***
+
+!!! Tested on win 10 console !!!
+
+Just copy Java_Drawing_APP.jar to some folder on your pc.
+Open console and type: java -jar _path_to_/Java_Drawing_APP.jar
+Then type h - to open help in console or follow instructions tips in console.
+
+
+*** Draft architecture description. *** 
+
+__Design patterns that was used__: 
+
+__Singleton__ - Canvas creation. Only one canvas object can exist during user session.
+__Command__  - To encapsulate drawing, quit,  help etc command and decouple them from main app logic.
+           For future if you want to add other command. You just create a new one of command folder and add it description to DrawingActions
+
+__Strategy__ - DrawingActions uses this pattern to connect command and their execution with main app logic.
+           Additional benefit  - avoid using switch with lot of cases or long if else tree.
+
+__AbstractFactory__ - Added for future. Help us to separate different GUI. In our case we use console as output. 
+                  Factory will allow easy to add MacGui or WidGui as output.   
+
+__entities folder__ - Added for moving from x, y to more concrete DAO in drawing - not implemented yet.
+
+__errors, exceptions, messages__ - partly supported.
+
+__utils__ - partly supported command parsing and validation.
+
+
+
 # Java_drawing_app
 
 *** The Problem ***
@@ -70,5 +103,8 @@ enter command:
 ----------------------
 
 enter command: Q
+
+
+
 
 

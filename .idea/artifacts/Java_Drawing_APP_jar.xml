@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Java_Drawing_APP:jar">
+    <output-path>$PROJECT_DIR$/target/artifacts/Java_Drawing_APP_jar</output-path>
+    <root id="archive" name="Java_Drawing_APP.jar">
+      <element id="module-output" name="Java_Drawing_APP" />
+    </root>
+  </artifact>
+</component>
